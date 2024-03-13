@@ -1,0 +1,28 @@
+.pasy {
+    margin: 50px;
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-left: 270px;
+}
+
+.button {
+    background-color: #aaaaaa;
+}
+
+.button:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+
+h1 {
+    margin-top: 20px;
+    margin-left: 290px;
+}
+
+.petrol {
+    display: block;
+    margin-bottom: 15px;
+}

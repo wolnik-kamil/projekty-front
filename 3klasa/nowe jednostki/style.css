@@ -1,0 +1,42 @@
+html {
+    margin: 0;
+}
+
+.container {
+    height: 150rem;
+    width: 100rem;
+    background-color: antiquewhite;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.left {
+    height: 100%;
+    width: 25%;
+    background-color: aqua;
+    display: flex;
+}
+
+.right {
+    height: 100%;
+    width: 75%;
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+.rightup {
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+
+}
+
+.rightdown {
+    height: 50%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+

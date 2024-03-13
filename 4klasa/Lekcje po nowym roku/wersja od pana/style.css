@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    background-color: #444444;
+    color: #444444;
+}
+
+.container { 
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    height: 20%;
+    font-size: 40px;
+}
+
+main {
+    height: 75%;
+    font-size: 20px;
+}
+
+footer {
+    height: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+input, select {
+    border-radius: 20px;
+    border: none;
+    background-color: bisque;
+}
+
+.border {
+    border: 1px solid #444444;
+    width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.uslugi {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+input.btn {
+    padding: 5px;
+    background-color: bisque;
+}
+
+input.btn:hover {
+    padding: 10px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.hideElement {
+    display: none;
+}

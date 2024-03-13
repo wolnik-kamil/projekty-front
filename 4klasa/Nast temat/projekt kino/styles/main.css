@@ -1,0 +1,98 @@
+@keyframes tvLight {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.tv-light {
+    background: linear-gradient(90deg, #ffbb00, #ff4500, #ffbb00);
+    background-size: 200% 200%;
+    animation: tvLight 4s linear infinite;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 25%;
+    display: flex;
+    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid black;
+    padding: 10px;
+    height: 100px;
+}
+
+label {
+    margin: 5px;
+}
+
+input {
+    width: 75px;
+}
+
+.right {
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    background-color: red;
+}
+
+button {
+    width: 55px;
+    height: 55px;
+    background-color: greenyellow;
+    margin:10px 5px 10px 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.cinema {
+    width: max-content;
+    height: max-content;
+}
+
+.trapeze {
+	width: 950px;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 30px solid black;
+	margin: 0 auto;
+    position: absolute;
+    top: 0;
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <script src="js/main.js" defer></script>
+    <form>
+        <fieldset>
+            <legend>Predictions</legend>
+
+            <fieldset class="teams-field">
+                <legend>Teams</legend>
+                <label for="home">
+                    Gospodarze: 
+                    <select id="home">
+                        <option value="default">Wybierz drużynę</option>
+                        <option value="Polska">Polska</option>
+                        <option value="Gebelsy">Niemcy</option>
+                        <option value="Anglia">Anglia</option>
+                    </select>
+                </label>
+        
+                <label for="visiting">
+                    Goście: 
+                    <select id="visiting">
+                        <option value="default">Wybierz drużynę</option>
+                        <option value="Polska">Polska</option>
+                        <option value="Gebelsy">Niemcy</option>
+                        <option value="Anglia">Anglia</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset class="score-field">
+                <legend>Score</legend>
+                <label for="home-score">
+                    Bramki gospodarzy: 
+                    <input type="number" id="home-score" required>
+                </label>
+                <label for="visiting-score">
+                    Bramki gości: 
+                    <input type="number" id="visiting-score" required>
+                </label>
+            </fieldset>
+            
+            <fieldset class="overtime-field">
+                <legend>Overtime</legend>
+                <label for="overtime-true">
+                    Będzie dogrywka: 
+                    <input type="radio" id="overtime-true" name="overtime">
+                </label>
+                <label for="overtime-false">
+                    Brak dogrywki: 
+                    <input type="radio" id="overtime-false" name="overtime">
+                </label>
+            </fieldset>
+
+            <fieldset class="extra-field">
+                <legend>Extra</legend>
+                <label for="y-cards">
+                    Żółte kartki: 
+                    <input type="checkbox" id="y-cards">
+                </label>
+                <label for="r-cards">
+                    Czerwone kartki: 
+                    <input type="checkbox" id="r-cards">
+                </label>
+                <label for="penalties">
+                    Rzuty karne: 
+                    <input type="checkbox" id="penalties">
+                </label>
+            </fieldset>
+            <input type="submit" id="sub" value="Wyświtl">
+            <input type="reset">
+            <div class="display"></div>
+        </fieldset>
+    </form>
+</body>
+</html>

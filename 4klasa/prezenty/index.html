@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Losowanie prezentów</legend>
+            <div class="dane">
+                <label for="prezent">Jaki chcesz dodać prezent? <input type="text" id="prezent"></label>
+                <label for="catAdd">
+                    <select name="kategoria" id="catAdd">
+                        <option value="nic"></option>
+                        <option value="Gry">Gry</option>
+                        <option value="Zabawki">Zabawki</option>
+                        <option value="Ubrania">Ubrania</option>
+                    </select>
+                </label>
+                <button class="pushGift">Dodaj prezent</button>
+            </div>
+            <div class="wyniki">
+                <label for="imie">Podaj imię: <input type="text" id="imie" required></label>
+                <label for="cookie">Czy chcesz nakramić renifera?<input type="checkbox" id="cookie"></label>
+                <fieldset>
+                    <legend>Z której kategorii chcesz prezent?</legend>
+                    <label for="gry">Gry: <input type="radio" name="cat" id="gry" value="gry"></label>
+                    <label for="zabawki">Zabawki: <input type="radio" name="cat" id="zabawki" value="zabawki"></label>
+                    <label for="ubrania">Ubrania: <input type="radio" name="cat" id="ubrania" value="ubrania"></label>
+                </fieldset>
+                <button class="losuj">Losuj</button>
+                <div class="display"></div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

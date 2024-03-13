@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let a = parseFloat(prompt("Podaj pierwsza liczbe"));
+    let b = parseFloat(prompt("Podaj druga liczbe"));
+    let znak = prompt("Wybierz: +, -, /, *");
+    let wynik;
+
+    if(isNaN(a) || isNaN(b))
+    {
+        document.write("To nie jest liczba")
+    } else {
+        switch(znak)
+        {
+            case "+":
+            wynik = a+b;
+            break;
+
+            case "-":
+            wynik = a-b;
+            break;
+
+            case "*":
+            wynik = a*b;
+            break;
+
+            case "/":
+            wynik = a/b;
+            break;
+
+            default:
+            wynik = "Blad";
+        }
+
+        document.write("wynik to: " + wynik)
+    }
+
+    
+</script>
+<body>
+    
+</body>
+</html>

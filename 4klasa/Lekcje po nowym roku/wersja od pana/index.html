@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serwis samochodu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Serwis samochodu</h1>
+      </header>
+      <main>
+        <div class="border">
+          <form action="#">
+            <label for="userName"
+              >Podaj imię: <input autocomplete="off" type="text" name="userName" id="userName" required min="2"
+            /></label>
+            <label for="serviceDate"
+              >Wybierz datę:
+              <input type="date" name="serviceDate" id="serviceDate" required
+            /></label>
+
+            <label for="vehicleType">
+              Rodzaj pojazdu:
+              <select name="vehicleType" id="vehicleType">
+                <option value="0"></option>
+                <option value="1">osobowy</option>
+                <option value="1.3">dostawczy</option>
+                <option value="1.5">ciężarowy</option>
+                <option value="2">autobus</option>
+                <option value="2.5">pojazd specjalny</option>
+              </select>
+            </label>
+            <div class="uslugi">
+              <fieldset>
+                <label for="tireReplacement"
+                  >Wymiana opon
+                  <input
+                    type="checkbox"
+                    name="tireReplacement"
+                    id="tireReplacement"
+                /></label>
+
+                <div class="tireRepl hideElement">
+                  <label for="wheel"
+                    >Koła
+                    <input type="radio" name="repl" id="wheel" value="100"
+                  /></label>
+                  <label for="tires"
+                    >Opony <input type="radio" name="repl" id="tires"
+                  /></label>
+                  <div class="wheelRim hideElement highlight">
+                    <label for="steel"
+                      >stalowe <input type="radio" name="rim" id="steel" value="200" checked
+                    /></label>
+                    <label for="alu"
+                      >aluminiowe
+                      <input type="radio" name="rim" id="alu" value="280"
+                    /></label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <label for="additionalServices"
+                  >Usługi dodatkowe
+                  <input
+                    type="checkbox"
+                    name="additionalServices"
+                    id="additionalServices"
+                /></label>
+                <div class="addServ hideElement">
+                  <label for="wipers"
+                    >Wymiana wycieraczek
+                    <input type="checkbox" name="wipers" id="wipers" value="80"
+                  /></label>
+                  <label for="lights"
+                    >Regulacja świateł
+                    <input type="checkbox" name="lights" id="lights" value="150"
+                  /></label>
+                </div>
+              </fieldset>
+            </div>
+            <fieldset>
+              <legend>Rabaty</legend>
+              <label for="extraDiscount"
+                >Karta stałego klienta
+                <select name="extraDiscount" id="extraDiscount">
+                  <option value="1"></option>
+                  <option value="0.95">standardowa (5%)</option>
+                  <option value="0.90">srebrna (10%)</option>
+                  <option value="0.80">złota (20%)</option>
+                </select>
+              </label>
+              <!-- <p class="totalDiscount">
+                Suma rabatów: <span class="totalDiscount"></span>
+              </p> -->
+            </fieldset>
+            <div class="buttons">
+              <input 
+              type="submit" 
+              value="Wycena"
+              class="btn"
+              />
+              <input
+                type="reset"
+                value="Wyczyść"
+                class="btn"
+              />
+            </div>
+            <p class="alert"></p>
+          </form>
+        </div>
+        <section>
+          <div class="display"></div>
+          <p>Wycena: <span class="pricing"></span></section></p>
+      </main>
+  
+      <footer>
+        <p>&copy; Kamil Wolnik 4Ti</p>
+      </footer>
+    </div>
+  </body>
+</html>

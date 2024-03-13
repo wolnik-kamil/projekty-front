@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przeglad</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Przygotowanie auta na zimę</legend>
+            <div class="header">
+                <label for="name">
+                    Imię właściciela: <input type="text" id="name" required>
+                </label>
+                <label for="type">
+                    Rodzaj pojazdu: <select name="type" id="type">
+                        <option value="1">Osobowy</option>
+                        <option value="1.5">Dostawczy</option>
+                        <option value="2">Ciężarowy</option>
+                    </select>
+                </label>
+            </div>
+            <div class="mid">
+                <fieldset>
+                    <legend>Opony</legend>
+                    <label for="tires">
+                        Wymiana opon <input type="radio" value="600" name="wheels/tires" id="tires">
+                    </label>
+                    <label for="WheelsTires">
+                        Wymiana kół+opony <input type="radio" value="1800" name="wheels/tires" id="WheelsTires">
+                    </label>
+                    <label for="steel" class="hidden">Stalowe <input type="radio" name="wheelType" id="steel"></label>
+                    <label for="alu" class="hidden">Aluminium <input type="radio" name="wheelType" id="alu"></label>
+                    <label for="wheels">
+                        Wymiana kół <input type="radio" value="100" name="wheels/tires" id="wheels">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Usługi porządkowe</legend>
+                    <label for="cleaning">
+                        Mycie podstawowe <input type="checkbox" value="50" name="cleaning" id="cleaning">
+                    </label>
+                    <label for="waxing">
+                        Woskowanie <input type="checkbox" value="25" name="waxing" id="waxing">
+                    </label>
+                    <label for="indoorClean">
+                        Pełne czyszczenie wnętrza <input type="checkbox" value="300" name="indoorClean" id="indoorClean">
+                    </label>
+                </fieldset>
+            </div>
+            <div class="bot">
+                <fieldset>
+                    <legend>Dodatkowe usługi</legend>
+                    <label for="oil">
+                        Wymiana oleju <input type="checkbox" value="200" id="oil" name="oil">
+                    </label>
+                    <label for="OilFilters">
+                        Wymiana filtrów oleju <input type="checkbox" value="100" id="OilFilters" name="OilFilters">
+                    </label>
+                    <label for="AirFilters">
+                        Wymiana filtrów powietrza <input type="checkbox" value="50" id="AirFilters" name="AirFilters">
+                    </label>
+                    <label for="wipers">
+                        Wymiana wycieraczek <input type="checkbox" id="wipers" value="70" name="wipers">
+                    </label>
+                    <label for="lights">
+                        Ustawianie świateł <input type="checkbox" id="lights" value="20" name="lights">
+                    </label>
+                </fieldset>
+            </div>
+            
+        </fieldset>
+        <input type="submit" id="sub">
+        <input type="reset">
+        <div class="display"></div>
+        
+    </form>
+</body>
+</html>

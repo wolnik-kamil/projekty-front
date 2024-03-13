@@ -1,0 +1,32 @@
+form>fieldset {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px;
+}
+
+
+#submit {
+    width: 80px;
+} 
+
+.hidden {
+    margin: 0!important;
+    display: none;
+}
